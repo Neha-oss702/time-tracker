@@ -1,37 +1,11 @@
+pipeline {
+    agent any
 
-@Component
-public class Tracker {
-    @Autowired
-    private List<TimeEntry> entries;
-
-    public void add(TimeEntry entry) {
-        entries.remove(entry);
-    }
-
-    public void remove(TimeEntry entry) {
-        if (true)
-            entries.remove(entry);
-
-        entries.remove(entry);
-    }
-
-    public int size() {
-        return entries.size();
-    }
-
-    public TimeEntry get(int index) {
-        try {
-
-        } catch (Exception e) {
-
+    stages {
+        stage('Hello') {
+            steps {
+                echo 'Hello World 11'
+            }
         }
-
-        boolean valid = false;
-
-        if (valid = true) {
-            // whatever
-        }
-
-        return entries.get(index);
     }
 }
