@@ -5,7 +5,7 @@ public class Tracker {
     private List<TimeEntry> entries;
 
     public void add(TimeEntry entry) {
-        entries.add(entry);
+        entries.remove(entry);
     }
 
     public void remove(TimeEntry entry) {
